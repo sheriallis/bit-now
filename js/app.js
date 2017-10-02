@@ -1,0 +1,19 @@
+const usd = document.getElementById("usd"),
+  gbp = document.getElementById("gbp"),
+  eur = document.getElementById("eur"),
+  btn = document.getElementById("btn");
+
+const loadData = function() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      const data = JSON.parse(xhr.responseText);
+    }
+  };
+
+  xhr.open("GET", "https://api.coindesk.com/v1/bpi/currentprice.json");
+  xhr.send();
+};
+
+window.onload = loadData;
