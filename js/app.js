@@ -24,3 +24,5 @@ const loadData = function() {
 };
 
 window.onload = loadData;
+
+btn.addEventListener("click", loadData);
