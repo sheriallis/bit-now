@@ -30,7 +30,7 @@ span {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -67,4 +67,10 @@ button:active {
 span {
   padding-bottom: 10px;
   border-bottom: 5px solid #fec007;
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
